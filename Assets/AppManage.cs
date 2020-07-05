@@ -22,8 +22,7 @@ public class AppManage : MonoBehaviour {
 		            Quaternion.identity);
 
 		// make rand color
-		b.renderer.material.color = new Vector4 (Random.Range (0.0f, 1f), Random.Range (0.0f, 1f), Random.Range (0.0f, 1f), 1f);
-	
+		b.GetComponent<Renderer>().material.color = new Color32( (byte)Random.Range(0,255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 1);
 	}
 
 	// Update is called once per frame
